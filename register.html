@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/register.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <h2>Sepatuku</h2>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/index.html#product" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="/index.html#contact" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="auth">
+            <li class="nav-item">
+              <a href="/login.html" class="nav-link"> Login </a>
+            </li>
+            <li class="nav-item">
+              <a href="/register.html" class="nav-link">
+                <button class="btn-primary">Register</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Page Content -->
+      <div class="page-content-register">
+        <div class="register" id="register">
+          <div class="register-heading">
+            <h2>Register</h2>
+          </div>
+          <div class="register-form" id="register-form">
+            <div class="form-group">
+              <label for="">Nama</label>
+              <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Example@gmail.com"
+              />
+              <small>Error Message</small>
+            </div>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+                placeholder="Password"
+              />
+              <small>Error Message</small>
+            </div>
+            <div class="form-group">
+              <a href="#" onclick="submitRegister()">
+                <button class="btn-submit">Register</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>Copyright &copy; 2021 - Cakra Buana</footer>
+  </body>
+  <script src="scripts/register.js"></script>
+  </body>
+</html>
